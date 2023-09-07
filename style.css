@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  #utc{
+font-size: 2rem;
+}
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+  
+  .info {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .github-link {
+    display: block;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+  }
