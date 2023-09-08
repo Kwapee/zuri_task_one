@@ -17,4 +17,4 @@ const timeUtc = document.getElementById('utc')
 
 todayTag.textContent=today
 
-setInterval(updateTime,1000)
+setInterval(updateTime,1)
