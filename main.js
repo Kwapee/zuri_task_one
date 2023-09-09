@@ -1,20 +1,16 @@
-const date = new Date()
+const day = document.querySelector(".day");
+const time = document.querySelector(".time");
 
-const days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
-const today = days[date.getDay()-1]
-
-
-
-const updateTime = () => {
-  const date = new Date()
-  const utcTime = date.toISOString().substr(11,8);
-  timeUtc.textContent = utcTime
-}
-
-const todayTag = document.getElementById('today')
-const timeUtc = document.getElementById('utc')
-
-todayTag.textContent=today
-
-setInterval(updateTime,1)
+const date = new Date();
+day.textContent = days[date.getDay()];
+time.textContent = date.getUTCMilliseconds();
