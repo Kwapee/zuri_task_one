@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Frontend Page</title>
-  <link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LawalAjarat</title>
 </head>
 <body>
-  <h1>Welcome to My Frontend Page!</h1>
-  
-  <img src="display.jpg" alt="Perry" class="profile-image">
-  
-  <div class="info">Amoako Perry Kwabena</div>
-  
-  <div data-testid="myTrack">
-    <p class="track">Frontend</p>
-  </div>
-  
-  <div class="date">
-    <p id="today" data-testid="currentDayOfTheWeek">today</p>
-    <p id="utc" data-testid="currentUTCTime"></p>
-  </div>
-  
-  <a href="https://github.com/Kwapee/zuri_task_one" class="github-link">Click here for my GitHub repository</a>
-  
-  <script>
-    greetUser();
-  </script>
-  <script src="main.js"></script>
+    <ul class="container">
+        <li class="name" data-testid="slackUserName">Amoako Perry Kwabena</li>
+        <img src="display.jpg" alt="AmoakoPerry" data-testid="slackDisplayImage">
+        <p class="day" data-testid="currentDayOfTheWeek">..</p>
+        <li class="time" data-testid="currentUTCTime">..</li>
+        <li class="track" data-testid="myTrack">Frontend</li>
+        <a href="https://github.com/Kwapee/zuri_task_one">
+            Get My Github Repository
+        </a>
+    </ul>
 </body>
+<script>
+   const day = document.querySelector(".day");
+const time = document.querySelector(".time");
+
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
+const date = new Date();
+day.textContent = days[date.getDay()];
+time.textContent = date.getUTCMilliseconds();
+</script>
 </html>
