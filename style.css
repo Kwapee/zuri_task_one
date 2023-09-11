@@ -1,59 +1,58 @@
-body{
-    color:white;
-    
-    
-}
-.container{
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: black ;
-}
-li{
-    list-style: none;
-    
-}
-img{
-   width: 200px;
-    display: block;
-    margin: 0 auto;
-    
-
-    
-}
-.name{
-    font-size: large;
-    text-transform: uppercase;
-    padding: 10px;
-    text-align: center;
-}
-.day{
-    font-size: medium;
-    text-transform: uppercase;
-    padding: 5px;
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    text-align: center;
+    padding: 0;
 }
-.time{
-    font-size: medium;
-    text-transform: uppercase;
-    padding: 5px;
-    margin: 0;
-    text-align: center;
-}
-
-.track{
-    font-size: large;
-    text-transform: uppercase;
-    padding: 5px;
-    text-align: center;
+.repo{
+    display: inline-block;
+    padding: 12px;
+    border: 1px solid rgba(0, 2.5, 3.4, 0.5);
+    cursor: pointer;
+    transition: all ease cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 a{
-    font-size: medium;
-    text-transform: capitalize;
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-    text-decoration: none;
-    color: purple;
+    text-decoration: none !important ;
+}
+header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 1rem 0;
+}
+.repo:hover{
+    border: 2px solid rgba(6, 99, 99, 0.5);;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header img {
+    width: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make it circular */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+}
+
+[data-testid="currentDayOfTheWeek"],
+[data-testid="currentUTCTime"],
+[data-testid="myTrack"] {
+    font-size: 1.2rem;
+    color: #555;
 }

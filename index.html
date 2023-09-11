@@ -3,37 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Info</title>
     <link rel="stylesheet" href="style.css">
-    <title>LawalAjarat</title>
 </head>
 <body>
-    <ul class="container">
-        <li class="name" data-testid="slackUserName">Amoako Perry Kwabena</li>
-        <img src="display.jpg" alt="AmoakoPerry" data-testid="slackDisplayImage">
-        <p class="day" data-testid="currentDayOfTheWeek">..</p>
-        <li class="time" data-testid="currentUTCTime">..</li>
-        <li class="track" data-testid="myTrack">Frontend</li>
-        <a href="https://github.com/Kwapee/zuri_task_one">
-            Get My Github Repository
-        </a>
-    </ul>
+    <header>
+        <h1 data-testid="slackUserName">Amoako Perry Kwabena</h1>
+        <img src="display.jpg" alt="Perry" data-testid="slackDisplayImage">
+    </header>
+    <main>
+        <section>
+            <h2>Current Information</h2>
+            <p data-testid="currentDayOfTheWeek">wait...</p>
+            <p data-testid="currentUTCTime">wait</p>
+            <p data-testid="myTrack">Frontend</p>
+            <p class="repo"><a href="https://github.com/darkweb907/zuri_first_project" data-testid="githubURL">GitHub Repository</a></p>
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
-<script>
-   const day = document.querySelector(".day");
-const time = document.querySelector(".time");
-
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-const date = new Date();
-day.textContent = days[date.getDay()];
-time.textContent = date.getUTCMilliseconds();
-</script>
 </html>
